@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# TitanX Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The TitanX Calendar App is a modern web application built with React, utilizing Vite as the build tool and Tailwind CSS for styling. The app features a dynamic calendar that displays incremental days since the TitanX launch date (October 28, 2023), current day information, TitanX launch day, and payout days.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dynamic calendar grid displaying days of the month
+- Calculation of incremental days starting from TitanX launch date
+- Highlights for today's date, TitanX launch day, and payout days
+- Side panel with today's information, TitanX incremental day, and payouts
+- Theme toggle between Gruvbox and Gruvbox Dark themes
+- Navigation to current day, TitanX launch day, and adjacent months
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: A JavaScript library for building user interfaces
+- **Vite**: A fast build tool with a modern developer experience
+- **pnpm**: An efficient package manager for JavaScript and Node.js
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To run the TitanX Calendar App locally, you'll need Node.js installed. It is recommended to use [pnpm](https://pnpm.io/) for managing the packages.
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/titanx-calendar-app.git
+cd titanx-calendar-app
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install depenancies
+
+```bash
+pnpm install
+```
+
+3. Start the Dev server
+
+```
+pnpm dev
+```
+
+## Usage
+Upon launching the TitanX Calendar App, you will see the current month displayed. You can navigate between months using the "Back" and "Next" buttons. To quickly jump to today's date or to the TitanX launch date, use the "Today" or "TitanX Launch" buttons, respectively. To toggle between Gruvbox and Gruvbox Dark themes, use the "Toggle Theme" button.
+
+In the calendar grid, the current day is highlighted. Days that have payout events are marked with "Payout Day X" labels. The side panel displays today's date, the TitanX incremental day, and any payouts that occur on that day.
+
+## Contributing
+Contributions are welcome! Please feel free to submit pull requests with new features, fixes, or improvements.
+
