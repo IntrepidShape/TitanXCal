@@ -1,4 +1,4 @@
-# TitanX Calendar App [titan-x-cal.vercel.app](titan-x-cal.vercel.app)
+# TitanX Calendar App
 ## 
 
 The TitanX Calendar App is a modern web application built with React, utilizing Vite as the build tool and Tailwind CSS for styling. The app features a dynamic calendar that displays incremental days since the TitanX launch date (October 28, 2023), current day information, TitanX launch day, and payout days.
